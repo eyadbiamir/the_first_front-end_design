@@ -34,7 +34,7 @@ servicesBtn.addEventListener("click", function () {
 
 galaryBtn.addEventListener("click", function () {
 	scrollTo({
-		top:  galary.offsetTop,
+		top: galary.offsetTop,
 		behavior: "smooth",
 	});
 });
@@ -64,18 +64,12 @@ icon.addEventListener("click", function () {
 });
 // scroll to top botton
 window.addEventListener("scroll", function () {
-	// if (window.scrollY >= 500 && window.scrollY <= 700) {
-	//     toTop.style.bottom = `${(window.scrollY-600)*0.5}px`
-	// } else if (window.scrollY <= 600) {
-	//     toTop.style.bottom = `${(window.scrollY-600)*0.5}px`
-
-	// } else if (window.scrollY >= 650) {
-	//     toTop.style.bottom = `50px`
-	// }
-	if (window.scrollY >= 500) {
-		toTop.style.bottom = "40px";
-	} else {
-		toTop.style.bottom = "";
+	if (window.scrollY >= 500 && window.scrollY <= 700) {
+		toTop.style.bottom = `${(window.scrollY - 600) * 0.5}px`;
+	} else if (window.scrollY <= 600) {
+		toTop.style.bottom = `${(window.scrollY - 600) * 0.5}px`;
+	} else if (window.scrollY >= 650) {
+		toTop.style.bottom = `50px`;
 	}
 });
 
