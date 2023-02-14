@@ -426,11 +426,6 @@ li:hover div.stripe {
 	}
 }
 
-@media (max-width: 1283px) {
-	.services .image {
-		margin: 30px 50%;
-	}
-}
 /* Services end*/
 /* galary start*/
 
